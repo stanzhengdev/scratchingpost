@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import logo from "./logo.svg";
 import "./App.css";
 import { createStore } from "redux";
@@ -28,7 +27,6 @@ class Counter extends Component {
   }
 
   render() {
-    const props = this.props;
     const state = store.getState();
     return (
       <h1>
